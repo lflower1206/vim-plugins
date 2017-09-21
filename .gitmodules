@@ -40,3 +40,9 @@
 [submodule "pack/plugins/start/tsuquyomi"]
 	path = pack/plugins/start/tsuquyomi
 	url = https://github.com/quramy/tsuquyomi
+[submodule "pack/plugins/start/pack/plugins/start"]
+	path = pack/plugins/start/pack/plugins/start
+	url = https://github.com/valloric/youcompleteme
+[submodule "pack/plugins/start/youcompleteme"]
+	path = pack/plugins/start/youcompleteme
+	url = https://github.com/valloric/youcompleteme

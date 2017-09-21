@@ -1,4 +1,7 @@
-:set nu
+set nu
+
+" Use 256 colours (Use this setting only if your terminal supports 256 colours)
+set t_Co=256
 
 nmap <f5> :NERDTreeToggle<cr>
 nmap <F8> :TagbarToggle<CR>
@@ -9,8 +12,31 @@ nmap <F8> :TagbarToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
+"""""""""" vim-airline
+" Always show statusline
+set laststatus=2
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
 """""""""" vim-airline-themes
-let g:airline_theme='light'
+let g:airline_theme='wombat'
 
 """""""""" vim-colors-solarized
 syntax enable
@@ -27,5 +53,5 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_typescript_checkers=['TSLint']
+let g:syntastic_typescript_checkers=['TSLint', 'ESLint']
 
