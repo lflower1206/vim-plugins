@@ -3,6 +3,9 @@ set nu
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
 
+syntax enable
+colorscheme jellybeans
+
 nmap <f5> :NERDTreeToggle<cr>
 nmap <F8> :TagbarToggle<CR>
 
@@ -11,6 +14,20 @@ nmap <F8> :TagbarToggle<CR>
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+
+"""""""""" NerdTree GIT
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
 
 """""""""" vim-airline
 " Always show statusline
@@ -22,10 +39,8 @@ if !exists('g:airline_symbols')
 endif
 
 " unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
+" let g:airline_left_sep = '▶'
+" let g:airline_right_sep = '◀'
 let g:airline_symbols.linenr = '␊'
 let g:airline_symbols.linenr = '␤'
 let g:airline_symbols.linenr = '¶'
@@ -37,11 +52,6 @@ let g:airline_symbols.whitespace = 'Ξ'
 
 """""""""" vim-airline-themes
 let g:airline_theme='wombat'
-
-"""""""""" vim-colors-solarized
-syntax enable
-set background=dark
-colorscheme solarized
 
 """""""""" Syntastic
 set statusline+=%#warningmsg#

@@ -1,5 +1,5 @@
-[submodule "pack/plugins/opt/nerdtree"]
-	path = pack/plugins/opt/nerdtree
+[submodule "pack/plugins/start/nerdtree"]
+	path = pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "pack/plugins/start/vim-fugitive"]
 	path = pack/plugins/start/vim-fugitive
@@ -10,21 +10,18 @@
 [submodule "pack/plugins/start/vim-surround"]
 	path = pack/plugins/start/vim-surround
 	url = https://github.com/tpope/vim-surround
-[submodule "pack/plugins/start/vim-colors-solarized"]
-	path = pack/plugins/start/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized
 [submodule "pack/plugins/start/vim-airline"]
 	path = pack/plugins/start/vim-airline
 	url = https://github.com/bling/vim-airline
 [submodule "pack/plugins/start/vim-airline-themes"]
 	path = pack/plugins/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "pack/plugins/opt/tagbar"]
-	path = pack/plugins/opt/tagbar
-	url = https://github.com/majutsushi/tagbar
-[submodule "pack/plugins/opt/nerdtree-git-plugin"]
-	path = pack/plugins/opt/nerdtree-git-plugin
-	url = https://github.com/xuyuanp/nerdtree-git-plugin
+[submodule "pack/plugins/start/tagbar"]
+	path = pack/plugins/start/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "pack/plugins/start/nerdtree-git-plugin"]
+	path = pack/plugins/start/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
 [submodule "pack/plugins/start/vim-javascript"]
 	path = pack/plugins/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript
@@ -46,3 +43,6 @@
 [submodule "pack/plugins/start/youcompleteme"]
 	path = pack/plugins/start/youcompleteme
 	url = https://github.com/valloric/youcompleteme
+[submodule "pack/plugins/start/jellybeans.vim"]
+	path = pack/plugins/start/jellybeans.vim
+	url = https://github.com/nanotech/jellybeans.vim.git
