@@ -2,11 +2,13 @@ set nu
 
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
+set hlsearch
 
 syntax enable
 colorscheme jellybeans
 
-nmap <f5> :NERDTreeToggle<cr>
+nmap <F5> :NERDTreeToggle<CR>
+nmap <F6> :IndentGuidesToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 
 """""""""" NerdTree
@@ -65,3 +67,5 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_typescript_checkers=['TSLint', 'ESLint']
 
+"""""""""" Tagbar
+let g:tagbar_autofocus = 1
