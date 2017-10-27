@@ -52,3 +52,6 @@
 [submodule "pack/plugins/start/vim-indent-guides"]
 	path = pack/plugins/start/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides
+[submodule "pack/plugins/start/nerdcommenter"]
+	path = pack/plugins/start/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter

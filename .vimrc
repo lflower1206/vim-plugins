@@ -7,6 +7,8 @@ set hlsearch
 syntax enable
 colorscheme jellybeans
 
+filetype plugin on
+
 nmap <F5> :NERDTreeToggle<CR>
 nmap <F6> :IndentGuidesToggle<CR>
 nmap <F8> :TagbarToggle<CR>
@@ -69,3 +71,9 @@ let g:syntastic_typescript_checkers=['TSLint', 'ESLint']
 
 """""""""" Tagbar
 let g:tagbar_autofocus = 1
+
+""""""""""NerdCommenter
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+
