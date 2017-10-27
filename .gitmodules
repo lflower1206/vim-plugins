@@ -55,3 +55,6 @@
 [submodule "pack/plugins/start/nerdcommenter"]
 	path = pack/plugins/start/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter
+[submodule "pack/plugins/start/tern_for_vim"]
+	path = pack/plugins/start/tern_for_vim
+	url = https://github.com/marijnh/tern_for_vim
